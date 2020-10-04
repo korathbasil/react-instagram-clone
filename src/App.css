@@ -7,12 +7,36 @@
   background-color: #fafafa;
 }
 .app__header {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+.app__headerContainer {
+  max-width: 950px;
+  margin: 0 auto;
   background-color: white;
   display: flex;
+  justify-content: space-between;
   padding: 20px;
-  border-bottom: 1px solid lightgray;
 }
 .app__headerImage {
   object-fit: contain;
-  width: 150px;
+  width: 100px;
+}
+.app__headerSearch {
+  display: flex;
+  align-items: center;
+}
+.app__mainBody {
+  width: 100%;
+}
+.app__mainBodyContainer {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+}
+.app__mainBodyPosts {
+  width: 70%;
+}
+.app__mainBodyWidgets {
+  width: 30%;
 }
