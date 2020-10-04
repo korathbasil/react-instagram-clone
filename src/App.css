@@ -6,26 +6,7 @@
   height: 100vh;
   background-color: #fafafa;
 }
-.app__header {
-  width: 100%;
-  border-bottom: 1px solid lightgray;
-}
-.app__headerContainer {
-  max-width: 950px;
-  margin: 0 auto;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-.app__headerImage {
-  object-fit: contain;
-  width: 100px;
-}
-.app__headerSearch {
-  display: flex;
-  align-items: center;
-}
+
 .app__mainBody {
   width: 100%;
 }
