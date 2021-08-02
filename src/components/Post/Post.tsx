@@ -8,7 +8,19 @@ import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import BookmarkBorderOutlinedIcon from "@material-ui/icons/BookmarkBorderOutlined";
 import { IconButton } from "@material-ui/core";
 
-function Post({ avatar, userName, postImage, caption }) {
+interface IPostProps {
+  avatar: string;
+  userName: string;
+  postImage: string;
+  caption: string;
+}
+
+const Post: React.FC<IPostProps> = ({
+  avatar,
+  userName,
+  postImage,
+  caption,
+}) => {
   return (
     <div className="post">
       <div className="post__header">
@@ -47,6 +59,6 @@ function Post({ avatar, userName, postImage, caption }) {
       </div>
     </div>
   );
-}
+};
 
 export default Post;
