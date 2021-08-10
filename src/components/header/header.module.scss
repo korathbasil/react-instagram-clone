@@ -1,20 +1,21 @@
-.header {
+.parent {
   width: 100%;
   border-bottom: 1px solid lightgray;
+  background-color: white;
 }
-.header__container {
+.container {
   max-width: 950px;
   margin: 0 auto;
-  background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
-.header__image {
-  object-fit: contain;
+.logo {
+  object-fit: cover;
   width: 100px;
+  transform: translateY(5px);
 }
-.header__search {
+.search {
   display: flex;
   align-items: center;
 }
