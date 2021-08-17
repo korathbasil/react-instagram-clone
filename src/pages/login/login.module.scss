@@ -1,0 +1,18 @@
+.parent {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  width: 350px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  img {
+    width: 150px;
+  }
+}
