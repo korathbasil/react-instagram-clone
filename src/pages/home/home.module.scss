@@ -1,7 +1,14 @@
 // .parent {
 //   background-color: red;
 // }
-.container {
-  max-width: 900px;
+.main {
+  max-width: 950px;
   margin: 0 auto;
+  display: flex;
+}
+.left {
+  width: calc(65% - 20px);
+}
+.right {
+  width: 35%;
 }
