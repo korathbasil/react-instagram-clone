@@ -1,7 +1,10 @@
 .parent {
   width: 100%;
+  position: fixed;
+  top: 0;
   border-bottom: 1px solid lightgray;
   background-color: white;
+  z-index: 1;
 }
 .container {
   max-width: 950px;
