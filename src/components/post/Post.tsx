@@ -1,4 +1,4 @@
-import "./Post.css";
+import styles from "./post.module.scss";
 import Avatar from "@material-ui/core/Avatar";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
@@ -21,20 +21,20 @@ const Post: React.FC<IPostProps> = ({
   caption,
 }) => {
   return (
-    <div className="post">
-      <div className="post__header">
-        <div className="post__headerInfo">
+    <div className={styles.post}>
+      <div className={styles.header}>
+        <div className={styles.headerInfo}>
           <Avatar src={avatar} />
-          <h5 className="post__headerInfoUserName">{userName}</h5>
+          <h5 className={styles.headerInfoUserName}>{userName}</h5>
         </div>
-        <MoreHorizIcon className="post__headerInfoAvatar" />
+        <MoreHorizIcon className={styles.headerInfoAvatar} />
       </div>
-      <div className="post__imageContainer">
-        <img className="post__headerImage" src={postImage} alt="" />
+      <div className={styles.imageContainer}>
+        <img className={styles.headerImage} src={postImage} alt="" />
       </div>
-      <div className="post__footer">
-        <div className="post__footerOptions">
-          <div className="post__footerOptionsReactions">
+      <div className={styles.footer}>
+        <div className={styles.footerOptions}>
+          <div className={styles.footerOptionsReactions}>
             <IconButton>
               <FavoriteBorderIcon />
             </IconButton>
@@ -49,7 +49,7 @@ const Post: React.FC<IPostProps> = ({
             <BookmarkBorderOutlinedIcon />
           </IconButton>
         </div>
-        <div className="post__footerLikeReport">
+        <div className={styles.footerLikeReport}>
           <p>Johgn Lucas and 3 others like this image</p>
         </div>
         <p>

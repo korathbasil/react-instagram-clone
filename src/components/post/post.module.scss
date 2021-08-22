@@ -2,42 +2,42 @@
   margin: 20px 0;
   border: 1px solid lightgrey;
 }
-.post__header {
+.header {
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.post__headerInfo {
+.headerInfo {
   display: flex;
   align-items: center;
 }
-.post__headerInfoUserName {
+.headerInfoUserName {
   margin-left: 15px;
 }
-.post__headerImageContainer {
+.headerImageContainer {
   overflow: hidden;
   width: 100%;
   height: 500px;
   border: 1px solid lightgray 0;
 }
-.post__headerImage {
+.headerImage {
   object-fit: contain;
 
   width: 100%;
 }
-.post__footer {
+.footer {
   width: 100%;
 }
-.post__footerOptions {
+.footerOptions {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.post__footerOptionsReactions {
+.footerOptionsReactions {
   display: flex;
   align-items: center;
 }
-.post__footerOptionsReactions > * {
+.footerOptionsReactions > * {
   margin: 5px;
 }
