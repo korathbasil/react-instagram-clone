@@ -4,10 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Login from "pages/login";
 import Home from "pages/home";
-// import Home from "./components/Home/Home";
-// import Login from "./pages/login/Login";
 
-function App() {
+const App = () => {
   const [posts, setPosts] = useState([]);
 
   return (
@@ -24,6 +22,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
