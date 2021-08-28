@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "components/header";
 import Login from "pages/login";
 import Home from "pages/home";
+import Messenger from "pages/messenger";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -16,6 +17,9 @@ const App = () => {
         <Switch>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/messenger">
+            <Messenger />
           </Route>
           <Route path="/">
             <Home />
