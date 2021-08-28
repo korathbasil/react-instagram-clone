@@ -29,9 +29,11 @@ const Post: React.FC<IPostProps> = ({
         </div>
         <MoreHorizIcon className={styles.headerInfoAvatar} />
       </div>
+
       <div className={styles.imageContainer}>
         <img className={styles.headerImage} src={postImage} alt="" />
       </div>
+
       <div className={styles.footer}>
         <div className={styles.footerOptions}>
           <div className={styles.footerOptionsReactions}>
