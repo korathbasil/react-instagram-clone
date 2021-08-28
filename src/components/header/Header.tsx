@@ -12,7 +12,7 @@ import {
   HeartOutlined,
   HeartFilled,
 } from "assets/icons";
-import { useState } from "react";
+import Avatar from "components/avatar";
 
 const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
   return (
@@ -53,6 +53,9 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
             <div className={styles.iconWrapper}>
               <HeartOutlined />
               <HeartFilled />
+            </div>
+            <div className={styles.iconWrapper}>
+              <Avatar src="https://upload.wikimedia.org/wikipedia/commons/d/df/Sabrina_Carpenter_2019.jpg" />
             </div>
           </nav>
         </div>
