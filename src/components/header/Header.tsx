@@ -1,14 +1,11 @@
-// Material UI elements
-// import SearchIcon from "@material-ui/icons/Search";
-import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
-import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
-import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
-import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutlined";
-
-import HeartOutlinedIcon from "assets/icons/HeartOutlinedIcon";
 import styles from "./header.module.scss";
-
 import Logo from "../../assets/images/instagram-logo.png";
+import {
+  HomeOutlined,
+  MessengerOutlined,
+  ExploreOutlined,
+  HeartOutlined,
+} from "assets/icons";
 
 function Header() {
   return (
@@ -20,11 +17,18 @@ function Header() {
         <div className={styles.center}></div>
         <div className={styles.right}>
           <nav>
-            <HeartOutlinedIcon />
-            <HomeOutlinedIcon />
-            <SendOutlinedIcon />
-            <ExploreOutlinedIcon />
-            <FavoriteBorderOutlinedIcon />
+            <div className={styles.iconWrapper}>
+              <HomeOutlined />
+            </div>
+            <div className={styles.iconWrapper}>
+              <MessengerOutlined />
+            </div>
+            <div className={styles.iconWrapper}>
+              <ExploreOutlined />
+            </div>
+            <div className={styles.iconWrapper}>
+              <HeartOutlined />
+            </div>
           </nav>
         </div>
       </div>
