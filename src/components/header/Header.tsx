@@ -5,8 +5,7 @@ import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
 import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutlined";
 
-// import MessengerFilledIcon from "assets/icons/MessengerFilledIcon";
-
+import HeartOutlinedIcon from "assets/icons/HeartOutlinedIcon";
 import styles from "./header.module.scss";
 
 import Logo from "../../assets/images/instagram-logo.png";
@@ -21,7 +20,7 @@ function Header() {
         <div className={styles.center}></div>
         <div className={styles.right}>
           <nav>
-            {/* <MessengerFilledIcon /> */}
+            <HeartOutlinedIcon />
             <HomeOutlinedIcon />
             <SendOutlinedIcon />
             <ExploreOutlinedIcon />
