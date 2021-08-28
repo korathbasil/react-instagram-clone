@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "./header.module.scss";
 import Logo from "../../assets/images/instagram-logo.png";
 import {
@@ -23,23 +25,29 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
         <div className={styles.right}>
           <nav>
             <div className={styles.iconWrapper}>
-              {activeRoute === "/" ? <HomeFilled /> : <HomeOutlined />}
+              <Link to="/">
+                {activeRoute === "/" ? <HomeFilled /> : <HomeOutlined />}
+              </Link>
             </div>
 
             <div className={styles.iconWrapper}>
-              {activeRoute === "/messenger" ? (
-                <MessengerFilled />
-              ) : (
-                <MessengerOutlined />
-              )}
+              <Link to="/messenger">
+                {activeRoute === "/messenger" ? (
+                  <MessengerFilled />
+                ) : (
+                  <MessengerOutlined />
+                )}
+              </Link>
             </div>
 
             <div className={styles.iconWrapper}>
-              {activeRoute === "/explore" ? (
-                <ExploreFilled />
-              ) : (
-                <ExploreOutlined />
-              )}
+              <Link to="/explore">
+                {activeRoute === "/explore" ? (
+                  <ExploreFilled />
+                ) : (
+                  <ExploreOutlined />
+                )}
+              </Link>
             </div>
 
             <div className={styles.iconWrapper}>
