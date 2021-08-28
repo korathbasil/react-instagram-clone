@@ -1,9 +1,11 @@
 // Material UI elements
-import SearchIcon from "@material-ui/icons/Search";
+// import SearchIcon from "@material-ui/icons/Search";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
 import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutlined";
+
+// import MessengerFilledIcon from "assets/icons/MessengerFilledIcon";
 
 import styles from "./header.module.scss";
 
@@ -19,6 +21,7 @@ function Header() {
         <div className={styles.center}></div>
         <div className={styles.right}>
           <nav>
+            {/* <MessengerFilledIcon /> */}
             <HomeOutlinedIcon />
             <SendOutlinedIcon />
             <ExploreOutlinedIcon />
