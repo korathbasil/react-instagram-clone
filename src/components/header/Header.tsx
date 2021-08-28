@@ -1,13 +1,18 @@
 import styles from "./header.module.scss";
 import Logo from "../../assets/images/instagram-logo.png";
 import {
+  HomeFilled,
   HomeOutlined,
+  MessengerFilled,
   MessengerOutlined,
+  ExploreFilled,
   ExploreOutlined,
   HeartOutlined,
+  HeartFilled,
 } from "assets/icons";
+import { useState } from "react";
 
-function Header() {
+const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
   return (
     <div className={styles.parent}>
       <div className={styles.container}>
@@ -18,28 +23,39 @@ function Header() {
         <div className={styles.right}>
           <nav>
             <div className={styles.iconWrapper}>
-              <HomeOutlined />
+              {activeRoute === "/" ? <HomeFilled /> : <HomeOutlined />}
             </div>
+
             <div className={styles.iconWrapper}>
-              <MessengerOutlined />
+              {activeRoute === "/messenger" ? (
+                <MessengerFilled />
+              ) : (
+                <MessengerOutlined />
+              )}
             </div>
+
             <div className={styles.iconWrapper}>
-              <ExploreOutlined />
+              {activeRoute === "/explore" ? (
+                <ExploreFilled />
+              ) : (
+                <ExploreOutlined />
+              )}
             </div>
+
             <div className={styles.iconWrapper}>
               <HeartOutlined />
+              <HeartFilled />
             </div>
           </nav>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Header;
 
-{
-  /* 
+/* 
         <div className={styles.search}>
           <SearchIcon />
           <input />
@@ -47,4 +63,3 @@ export default Header;
         <div className="header__nav">
           
         </div> */
-}
