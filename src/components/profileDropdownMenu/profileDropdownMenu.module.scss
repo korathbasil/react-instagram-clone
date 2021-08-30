@@ -3,14 +3,14 @@
   position: absolute;
   right: -10px;
   border-radius: 10px;
-  padding: 10px 0;
   background-color: white;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .option {
   display: flex;
   align-items: center;
-  margin: 0 20px 15px 20px;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in;
 
   p {
     margin-left: 10px;
@@ -18,7 +18,11 @@
   }
 }
 .logout {
-  margin-top: 10px;
-  margin-left: 20px;
+  padding: 10px 20px;
   font-size: 14px;
+  transition: background-color 0.2s ease-in;
+}
+.option:hover,
+.logout:hover {
+  background-color: #d3d3d33b;
 }
