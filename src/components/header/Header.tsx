@@ -61,8 +61,8 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
               className={styles.iconWrapper}
               onClick={() => menuOpeningHalndler("notifications")}
             >
-              <HeartOutlined />
-              <HeartFilled />
+              {openedMenu !== "notifications" && <HeartOutlined />}
+              {openedMenu === "notifications" && <HeartFilled />}
               <NotificationsDropdownMenu
                 openedMenu={openedMenu}
                 setOpenedMenu={setOpenedMenu}
