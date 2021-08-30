@@ -11,7 +11,9 @@ const NotificationsDropdownMenu: React.FC<INotifiactionsDropdownMenuProps> = ({
   return (
     <div>
       {openedMenu === "notifications" && (
-        <div className={styles.menu}>Notifications</div>
+        <div className={styles.menu}>
+          <h2>Notifications</h2>
+        </div>
       )}
     </div>
   );
