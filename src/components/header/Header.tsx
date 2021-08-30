@@ -13,6 +13,9 @@ import {
   HeartFilled,
 } from "assets/icons";
 import Avatar from "components/avatar";
+import DropdownMenu from "components/dropdownMenu";
+import ProfileDropdownMenu from "components/profileDropdownMenu";
+import NotificationsDropdownMenu from "components/notificationsDropdownMenu";
 
 const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
   return (
@@ -53,9 +56,25 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
             <div className={styles.iconWrapper}>
               <HeartOutlined />
               <HeartFilled />
+              <DropdownMenu
+                render={(isMenuOpen, setIsMenuOpen) => (
+                  <NotificationsDropdownMenu
+                    isMenuOpen={isMenuOpen}
+                    setIsMenuOpen={setIsMenuOpen}
+                  />
+                )}
+              />
             </div>
             <div className={styles.iconWrapper}>
               <Avatar src="https://upload.wikimedia.org/wikipedia/commons/d/df/Sabrina_Carpenter_2019.jpg" />
+              <DropdownMenu
+                render={(isMenuOpen, setIsMenuOpen) => (
+                  <NotificationsDropdownMenu
+                    isMenuOpen={isMenuOpen}
+                    setIsMenuOpen={setIsMenuOpen}
+                  />
+                )}
+              />
             </div>
           </nav>
         </div>
