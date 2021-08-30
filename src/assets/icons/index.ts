@@ -7,6 +7,11 @@ import ExploreFilledIcon from "./ExploreFilledIcon";
 import HeartOutlinedIcon from "./HeartOutlinedIcon";
 import HeartFilledIcon from "./HeartFilledIcon";
 
+import ProfileLinedIcon from "./ProfileLinedIcon";
+import SaveLinedIcon from "./SaveLinedIcon";
+import SettingsLinedIcon from "./SettingsLinedIcon";
+import SwitchAccountLinedIcon from "./SwitchAccountLinedIcon";
+
 export {
   HomeOutlinedIcon as HomeOutlined,
   HomeFilledIcon as HomeFilled,
@@ -16,4 +21,8 @@ export {
   ExploreFilledIcon as ExploreFilled,
   HeartOutlinedIcon as HeartOutlined,
   HeartFilledIcon as HeartFilled,
+  ProfileLinedIcon as ProfileLined,
+  SaveLinedIcon as SaveLined,
+  SettingsLinedIcon as SettingsLined,
+  SwitchAccountLinedIcon as SwitchAccountLined,
 };
