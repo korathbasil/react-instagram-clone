@@ -20,7 +20,10 @@ import NotificationsDropdownMenu from "components/notificationsDropdownMenu";
 const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
   const [openedMenu, setOpenedMenu] = useState("");
 
-  const menuOpeningHalndler = (menuName: string) => setOpenedMenu(menuName);
+  const menuOpeningHalndler = (menuName: string) => {
+    if (openedMenu === menuName) setOpenedMenu("");
+    else setOpenedMenu(menuName);
+  };
 
   return (
     <div className={styles.parent}>
