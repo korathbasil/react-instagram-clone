@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./header.module.scss";
@@ -18,6 +19,10 @@ import ProfileDropdownMenu from "components/profileDropdownMenu";
 import NotificationsDropdownMenu from "components/notificationsDropdownMenu";
 
 const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuOpeningHalndler = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <div className={styles.parent}>
       <div className={styles.container}>
@@ -53,10 +58,12 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
               </Link>
             </div>
 
-            <div className={styles.iconWrapper}>
+            <div className={styles.iconWrapper} onClick={menuOpeningHalndler}>
               <HeartOutlined />
               <HeartFilled />
               <DropdownMenu
+                isMenuOpen={isMenuOpen}
+                setIsMenuOpen={setIsMenuOpen}
                 render={(isMenuOpen, setIsMenuOpen) => (
                   <NotificationsDropdownMenu
                     isMenuOpen={isMenuOpen}
@@ -65,11 +72,13 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
                 )}
               />
             </div>
-            <div className={styles.iconWrapper}>
+            <div className={styles.iconWrapper} onClick={menuOpeningHalndler}>
               <Avatar src="https://upload.wikimedia.org/wikipedia/commons/d/df/Sabrina_Carpenter_2019.jpg" />
               <DropdownMenu
+                isMenuOpen={isMenuOpen}
+                setIsMenuOpen={setIsMenuOpen}
                 render={(isMenuOpen, setIsMenuOpen) => (
-                  <NotificationsDropdownMenu
+                  <ProfileDropdownMenu
                     isMenuOpen={isMenuOpen}
                     setIsMenuOpen={setIsMenuOpen}
                   />

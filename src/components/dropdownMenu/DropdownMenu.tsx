@@ -1,14 +1,17 @@
-import React, { useState } from "react";
-
 interface IDropdownMenuProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
   render: (
     isMenuOpen: boolean,
     setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
   ) => JSX.Element;
 }
 
-const DropdownMenu: React.FC<IDropdownMenuProps> = ({ render }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const DropdownMenu: React.FC<IDropdownMenuProps> = ({
+  render,
+  isMenuOpen,
+  setIsMenuOpen,
+}) => {
   return <div>{render(isMenuOpen, setIsMenuOpen)}</div>;
 };
 
