@@ -14,14 +14,13 @@ import {
   HeartFilled,
 } from "assets/icons";
 import Avatar from "components/avatar";
-import DropdownMenu from "components/dropdownMenu";
 import ProfileDropdownMenu from "components/profileDropdownMenu";
 import NotificationsDropdownMenu from "components/notificationsDropdownMenu";
 
 const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openedMenu, setOpenedMenu] = useState("");
 
-  const menuOpeningHalndler = () => setIsMenuOpen(!isMenuOpen);
+  const menuOpeningHalndler = (menuName: string) => setOpenedMenu(menuName);
 
   return (
     <div className={styles.parent}>
@@ -58,31 +57,25 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
               </Link>
             </div>
 
-            <div className={styles.iconWrapper} onClick={menuOpeningHalndler}>
+            <div
+              className={styles.iconWrapper}
+              onClick={() => menuOpeningHalndler("notifications")}
+            >
               <HeartOutlined />
               <HeartFilled />
-              <DropdownMenu
-                isMenuOpen={isMenuOpen}
-                setIsMenuOpen={setIsMenuOpen}
-                render={(isMenuOpen, setIsMenuOpen) => (
-                  <NotificationsDropdownMenu
-                    isMenuOpen={isMenuOpen}
-                    setIsMenuOpen={setIsMenuOpen}
-                  />
-                )}
+              <NotificationsDropdownMenu
+                openedMenu={openedMenu}
+                setOpenedMenu={setOpenedMenu}
               />
             </div>
-            <div className={styles.iconWrapper} onClick={menuOpeningHalndler}>
+            <div
+              className={styles.iconWrapper}
+              onClick={() => menuOpeningHalndler("profile")}
+            >
               <Avatar src="https://upload.wikimedia.org/wikipedia/commons/d/df/Sabrina_Carpenter_2019.jpg" />
-              <DropdownMenu
-                isMenuOpen={isMenuOpen}
-                setIsMenuOpen={setIsMenuOpen}
-                render={(isMenuOpen, setIsMenuOpen) => (
-                  <ProfileDropdownMenu
-                    isMenuOpen={isMenuOpen}
-                    setIsMenuOpen={setIsMenuOpen}
-                  />
-                )}
+              <ProfileDropdownMenu
+                openedMenu={openedMenu}
+                setOpenedMenu={setOpenedMenu}
               />
             </div>
           </nav>

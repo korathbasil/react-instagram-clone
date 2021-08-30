@@ -1,15 +1,19 @@
 import styles from "./notificationsDropdownMenu.module.scss";
 
 interface INotifiactionsDropdownMenuProps {
-  isMenuOpen: boolean;
-  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  openedMenu: string;
+  setOpenedMenu: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const NotificationsDropdownMenu: React.FC<INotifiactionsDropdownMenuProps> = ({
-  isMenuOpen,
+  openedMenu,
 }) => {
   return (
-    <div>{isMenuOpen && <div className={styles.menu}>Notifications</div>}</div>
+    <div>
+      {openedMenu === "notifications" && (
+        <div className={styles.menu}>Notifications</div>
+      )}
+    </div>
   );
 };
 

@@ -1,15 +1,19 @@
 import styles from "./profileDropdownMenu.module.scss";
 
 interface IProfileDropdownMenuProps {
-  isMenuOpen: boolean;
-  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  openedMenu: string;
+  setOpenedMenu: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const ProfileDropdownMenu: React.FC<IProfileDropdownMenuProps> = ({
-  isMenuOpen,
+  openedMenu,
 }) => {
   return (
-    <div>{isMenuOpen && <div className={styles.menu}>Notifications</div>}</div>
+    <div>
+      {openedMenu === "profile" && (
+        <div className={styles.menu}>Notifications</div>
+      )}
+    </div>
   );
 };
 
