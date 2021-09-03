@@ -18,6 +18,8 @@ import HeartFilledRedIcon from "./HeartFilledRedIcon";
 import CommentOutlinedIcon from "./CommentOutlinedIcon";
 import ShareOutlinedIcon from "./ShareOutlinedIcon";
 
+import SmileyOutlinedIcon from "./SmileyOutlinedIcon";
+
 export {
   HomeOutlinedIcon as HomeOutlined,
   HomeFilledIcon as HomeFilled,
@@ -35,4 +37,5 @@ export {
   HeartFilledRedIcon as HeartFilledRed,
   CommentOutlinedIcon as CommentOutlined,
   ShareOutlinedIcon as ShareOutlined,
+  SmileyOutlinedIcon as SmileyOutlined,
 };

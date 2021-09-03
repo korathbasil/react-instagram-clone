@@ -7,6 +7,7 @@ import {
   CommentOutlined,
   ShareOutlined,
   SaveOutlined,
+  SmileyOutlined,
 } from "assets/icons";
 
 interface IPostProps {
@@ -55,13 +56,21 @@ const Post: React.FC<IPostProps> = ({
           </p>
           <p className={styles.commentCount}>View all 899 Comments</p>
           <p>
-            <strong>{userName}</strong> {caption}
+            <strong>James Alvaro</strong> {caption}
           </p>
           <p>
-            <strong>{userName}</strong> {caption}
+            <strong>Joseph Kennedy</strong> {caption}
           </p>
         </div>
+        <div className={styles.timeStamp}>
+          <p>4 hours ago</p>
+        </div>
       </div>
+      <form className={styles.addCommentForm}>
+        <SmileyOutlined />
+        <input type="text" placeholder="Add a comment..." />
+        <button type="submit">Post</button>
+      </form>
     </div>
   );
 };
