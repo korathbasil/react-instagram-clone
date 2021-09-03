@@ -41,7 +41,9 @@ const Login: React.FC = () => {
             required
           />
 
-          <button type="submit">Log in</button>
+          <button type="submit" disabled>
+            Log in
+          </button>
 
           {/* Here goes the devider */}
 
