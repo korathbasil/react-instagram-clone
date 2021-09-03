@@ -31,6 +31,28 @@
     border: none;
     outline: none;
   }
+
+  .loginFB {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 15px;
+      margin: 20px;
+      margin-right: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--facebook-blue);
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: var(--facebook-blue);
+  }
 }
 
 .bottom {

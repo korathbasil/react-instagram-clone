@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import styles from "./login.module.scss";
 
-import Logo from "../../assets/images/instagram-logo.png";
+import Logo from "assets/images/instagram-logo-black.png";
+import FacebookLogoSmall from "assets/images/facebook-logo-small.png";
 
 const Login: React.FC = () => {
   const loginHandler = (e: React.FormEvent<HTMLFormElement>) => {
@@ -45,6 +46,7 @@ const Login: React.FC = () => {
           {/* Here goes the devider */}
 
           <div className={styles.loginFB}>
+            <img src={FacebookLogoSmall} alt="facebook-logo" />
             <p>Login with Facebook</p>
           </div>
           <p>Forgotten your password ?</p>

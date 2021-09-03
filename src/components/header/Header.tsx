@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./header.module.scss";
-import Logo from "../../assets/images/instagram-logo.png";
+import Logo from "../../assets/images/instagram-logo-black.png";
 import {
   HomeFilled,
   HomeOutlined,
