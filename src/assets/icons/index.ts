@@ -15,6 +15,8 @@ import SwitchAccountOutlinedIcon from "./SwitchAccountOutlinedIcon";
 import MoreOptionsHorizontalIcon from "./MoreOptionsHorizontalIcon";
 
 import HeartFilledRedIcon from "./HeartFilledRedIcon";
+import CommentOutlinedIcon from "./CommentOutlinedIcon";
+import ShareOutlinedIcon from "./ShareOutlinedIcon";
 
 export {
   HomeOutlinedIcon as HomeOutlined,
@@ -31,4 +33,6 @@ export {
   SwitchAccountOutlinedIcon as SwitchAccountOutlined,
   MoreOptionsHorizontalIcon as MoreOptionsHorizontal,
   HeartFilledRedIcon as HeartFilledRed,
+  CommentOutlinedIcon as CommentOutlined,
+  ShareOutlinedIcon as ShareOutlined,
 };

@@ -1,12 +1,13 @@
 import styles from "./post.module.scss";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import ChatBubbleOutlineOutlinedIcon from "@material-ui/icons/ChatBubbleOutlineOutlined";
-import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
-import BookmarkBorderOutlinedIcon from "@material-ui/icons/BookmarkBorderOutlined";
-import { IconButton } from "@material-ui/core";
 
 import Avatar from "components/avatar";
-import { MoreOptionsHorizontal, HeartFilledRed } from "assets/icons";
+import {
+  MoreOptionsHorizontal,
+  HeartFilledRed,
+  CommentOutlined,
+  ShareOutlined,
+  SaveOutlined,
+} from "assets/icons";
 
 interface IPostProps {
   avatar: string;
@@ -40,16 +41,10 @@ const Post: React.FC<IPostProps> = ({
         <div className={styles.footerOptions}>
           <div className={styles.footerOptionsReactions}>
             <HeartFilledRed />
-            <IconButton>
-              <ChatBubbleOutlineOutlinedIcon />
-            </IconButton>
-            <IconButton>
-              <SendOutlinedIcon />
-            </IconButton>
+            <CommentOutlined />
+            <ShareOutlined />
           </div>
-          <IconButton>
-            <BookmarkBorderOutlinedIcon />
-          </IconButton>
+          <SaveOutlined />
         </div>
         <div className={styles.footerLikeReport}>
           <p>Johgn Lucas and 3 others like this image</p>
