@@ -1,10 +1,12 @@
 import styles from "./home.module.scss";
+
+import Header from "components/header";
 import PostContainer from "containers/postContainer/";
 
 const Home: React.FC = () => {
   return (
     <div className={styles.parent}>
-      {/* <Header /> */}
+      <Header activeRoute={"/"} />
       <div className={styles.main}>
         <div className={styles.left}>
           <PostContainer />
