@@ -7,12 +7,36 @@
 .child {
   width: 350px;
 }
-.main {
+.loginForm {
   display: flex;
   flex-direction: column;
   padding: 40px;
+  border: 1px solid var(--lightgrey);
+  align-items: center;
 
   img {
     width: 150px;
   }
+
+  input {
+    width: 100%;
+    border: 1px solid var(--lightgrey);
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}
+
+.bottom {
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  border: var(--border);
+  margin-top: 10px;
 }

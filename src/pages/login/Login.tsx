@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 // import axios from "config/axios";
 
 import styles from "./login.module.scss";
@@ -22,27 +23,36 @@ const Login: React.FC = () => {
   return (
     <div className={styles.parent}>
       <div className={styles.child}>
-        <div className={styles.main}>
+        <form className={styles.loginForm} action="" onSubmit={loginHandler}>
           <img src={Logo} alt="" />
-          <form action="" onSubmit={loginHandler}>
-            <div>
-              <input
-                type="email"
-                data-testid="email-input"
-                placeholder="Email"
-                required
-              />
 
-              <input
-                type="password"
-                data-testid="password-input"
-                placeholder="Password"
-                required
-              />
-            </div>
+          <input
+            type="email"
+            data-testid="email-input"
+            placeholder="Phone number, username or email address"
+            required
+          />
 
-            <button type="submit">Log in</button>
-          </form>
+          <input
+            type="password"
+            data-testid="password-input"
+            placeholder="Password"
+            required
+          />
+
+          <button type="submit">Log in</button>
+
+          {/* Here goes the devider */}
+
+          <div className={styles.loginFB}>
+            <p>Login with Facebook</p>
+          </div>
+          <p>Forgotten your password ?</p>
+        </form>
+        <div className={styles.bottom}>
+          <p>
+            Don't have an account? <Link to="/signup">Sign up</Link>
+          </p>
         </div>
       </div>
     </div>

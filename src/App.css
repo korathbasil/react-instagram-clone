@@ -9,6 +9,8 @@
   --grey: grey;
   --lightgrey: lightgrey;
   --blue: #0095f6;
+
+  --border: 1px solid var(--lightgrey);
 }
 
 .app {
