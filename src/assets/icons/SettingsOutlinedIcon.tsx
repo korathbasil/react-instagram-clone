@@ -1,4 +1,4 @@
-const SettingsLinedIcon = () => (
+const SettingsOutlinedIcon = () => (
   <svg
     aria-label="Settings"
     fill="#262626"
@@ -11,4 +11,4 @@ const SettingsLinedIcon = () => (
   </svg>
 );
 
-export default SettingsLinedIcon;
+export default SettingsOutlinedIcon;

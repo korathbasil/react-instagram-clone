@@ -1,4 +1,4 @@
-const ProfileLinedIcon = () => (
+const ProfileOutlinedIcon = () => (
   <svg
     aria-label="Profile"
     fill="#262626"
@@ -11,4 +11,4 @@ const ProfileLinedIcon = () => (
   </svg>
 );
 
-export default ProfileLinedIcon;
+export default ProfileOutlinedIcon;

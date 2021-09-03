@@ -1,10 +1,10 @@
 import styles from "./profileDropdownMenu.module.scss";
 
 import {
-  ProfileLined,
-  SaveLined,
-  SettingsLined,
-  SwitchAccountLined,
+  ProfileOutlined,
+  SaveOutlined,
+  SettingsOutlined,
+  SwitchAccountOutlined,
 } from "assets/icons";
 
 interface IProfileDropdownMenuProps {
@@ -20,19 +20,19 @@ const ProfileDropdownMenu: React.FC<IProfileDropdownMenuProps> = ({
       {openedMenu === "profile" && (
         <div className={styles.menu}>
           <div className={styles.option}>
-            <ProfileLined />
+            <ProfileOutlined />
             <p>Profile</p>
           </div>
           <div className={styles.option}>
-            <SaveLined />
+            <SaveOutlined />
             <p>Saved</p>
           </div>
           <div className={styles.option}>
-            <SettingsLined />
+            <SettingsOutlined />
             <p>Settings</p>
           </div>
           <div className={styles.option}>
-            <SwitchAccountLined />
+            <SwitchAccountOutlined />
             <p>Switch Accounts</p>
           </div>
           <hr color="lightgrey" />

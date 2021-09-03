@@ -7,12 +7,14 @@ import ExploreFilledIcon from "./ExploreFilledIcon";
 import HeartOutlinedIcon from "./HeartOutlinedIcon";
 import HeartFilledIcon from "./HeartFilledIcon";
 
-import ProfileLinedIcon from "./ProfileLinedIcon";
-import SaveLinedIcon from "./SaveLinedIcon";
-import SettingsLinedIcon from "./SettingsLinedIcon";
-import SwitchAccountLinedIcon from "./SwitchAccountLinedIcon";
+import ProfileOutlinedIcon from "./ProfileOutlinedIcon";
+import SaveOutlinedIcon from "./SaveOutlinedIcon";
+import SettingsOutlinedIcon from "./SettingsOutlinedIcon";
+import SwitchAccountOutlinedIcon from "./SwitchAccountOutlinedIcon";
 
 import MoreOptionsHorizontalIcon from "./MoreOptionsHorizontalIcon";
+
+import HeartFilledRedIcon from "./HeartFilledRedIcon";
 
 export {
   HomeOutlinedIcon as HomeOutlined,
@@ -23,9 +25,10 @@ export {
   ExploreFilledIcon as ExploreFilled,
   HeartOutlinedIcon as HeartOutlined,
   HeartFilledIcon as HeartFilled,
-  ProfileLinedIcon as ProfileLined,
-  SaveLinedIcon as SaveLined,
-  SettingsLinedIcon as SettingsLined,
-  SwitchAccountLinedIcon as SwitchAccountLined,
+  ProfileOutlinedIcon as ProfileOutlined,
+  SaveOutlinedIcon as SaveOutlined,
+  SettingsOutlinedIcon as SettingsOutlined,
+  SwitchAccountOutlinedIcon as SwitchAccountOutlined,
   MoreOptionsHorizontalIcon as MoreOptionsHorizontal,
+  HeartFilledRedIcon as HeartFilledRed,
 };

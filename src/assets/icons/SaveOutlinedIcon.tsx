@@ -1,4 +1,4 @@
-const SaveLinedIcon = () => (
+const SaveOutlinedIcon = () => (
   <svg
     aria-label="Saved"
     fill="#262626"
@@ -11,4 +11,4 @@ const SaveLinedIcon = () => (
   </svg>
 );
 
-export default SaveLinedIcon;
+export default SaveOutlinedIcon;

@@ -1,4 +1,4 @@
-const SwitchAccountLinedIcon = () => (
+const SwitchAccountOutlinedIcon = () => (
   <svg
     aria-label="Switch accounts"
     fill="#262626"
@@ -11,4 +11,4 @@ const SwitchAccountLinedIcon = () => (
   </svg>
 );
 
-export default SwitchAccountLinedIcon;
+export default SwitchAccountOutlinedIcon;

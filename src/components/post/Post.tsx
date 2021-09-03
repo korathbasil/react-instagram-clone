@@ -6,7 +6,7 @@ import BookmarkBorderOutlinedIcon from "@material-ui/icons/BookmarkBorderOutline
 import { IconButton } from "@material-ui/core";
 
 import Avatar from "components/avatar";
-import { MoreOptionsHorizontal } from "assets/icons";
+import { MoreOptionsHorizontal, HeartFilledRed } from "assets/icons";
 
 interface IPostProps {
   avatar: string;
@@ -39,9 +39,7 @@ const Post: React.FC<IPostProps> = ({
       <div className={styles.footer}>
         <div className={styles.footerOptions}>
           <div className={styles.footerOptionsReactions}>
-            <IconButton>
-              <FavoriteBorderIcon />
-            </IconButton>
+            <HeartFilledRed />
             <IconButton>
               <ChatBubbleOutlineOutlinedIcon />
             </IconButton>
