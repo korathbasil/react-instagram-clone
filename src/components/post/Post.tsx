@@ -41,14 +41,21 @@ const Post: React.FC<IPostProps> = ({
       <div className={styles.footer}>
         <div className={styles.options}>
           <div className={styles.reactions}>
-            <HeartFilledRed />
-            <CommentOutlined />
-            <ShareOutlined />
+            <div>
+              <HeartFilledRed />
+            </div>
+            <div>
+              <CommentOutlined />
+            </div>
+            <div>
+              <ShareOutlined />
+            </div>
           </div>
           <SaveOutlined />
         </div>
         <div className={styles.likeStats}>
-          <p>Johgn Lucas and 3 others like this image</p>
+          <Avatar src={avatar} />
+          <p>Liked by John_andrews and 233 others</p>
         </div>
         <div className={styles.comments}>
           <p>

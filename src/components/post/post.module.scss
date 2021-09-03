@@ -43,9 +43,19 @@
   .reactions {
     display: flex;
     align-items: center;
+
+    div {
+      margin-right: 10px;
+    }
   }
 
   .likeStats {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 13px;
+    }
   }
 
   .comments {
