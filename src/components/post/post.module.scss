@@ -32,16 +32,30 @@
 }
 .footer {
   width: 100%;
-}
-.footerOptions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.footerOptionsReactions {
-  display: flex;
-  align-items: center;
-}
-.footerOptionsReactions > * {
-  margin: 5px;
+  padding: 10px;
+
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .reactions {
+    display: flex;
+    align-items: center;
+  }
+
+  .likeStats {
+  }
+
+  .comments {
+    p {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .commentCount {
+      color: var(--grey);
+    }
+  }
 }

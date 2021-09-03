@@ -1,7 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --white: white;
+  --grey: grey;
+  --lightgrey: lightgrey;
+}
+
 .app {
   height: 100vh;
   background-color: #fafafa;
