@@ -1,11 +1,12 @@
 import styles from "./post.module.scss";
-import Avatar from "@material-ui/core/Avatar";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import ChatBubbleOutlineOutlinedIcon from "@material-ui/icons/ChatBubbleOutlineOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import BookmarkBorderOutlinedIcon from "@material-ui/icons/BookmarkBorderOutlined";
 import { IconButton } from "@material-ui/core";
+
+import Avatar from "components/avatar";
+import { MoreOptionsHorizontal } from "assets/icons";
 
 interface IPostProps {
   avatar: string;
@@ -27,7 +28,8 @@ const Post: React.FC<IPostProps> = ({
           <Avatar src={avatar} />
           <h5 className={styles.headerInfoUserName}>{userName}</h5>
         </div>
-        <MoreHorizIcon className={styles.headerInfoAvatar} />
+        {/* <MoreHorizIcon className={styles.headerInfoAvatar} /> */}
+        <MoreOptionsHorizontal />
       </div>
 
       <div className={styles.imageContainer}>

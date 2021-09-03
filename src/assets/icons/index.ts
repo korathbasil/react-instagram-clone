@@ -12,6 +12,8 @@ import SaveLinedIcon from "./SaveLinedIcon";
 import SettingsLinedIcon from "./SettingsLinedIcon";
 import SwitchAccountLinedIcon from "./SwitchAccountLinedIcon";
 
+import MoreOptionsHorizontalIcon from "./MoreOptionsHorizontalIcon";
+
 export {
   HomeOutlinedIcon as HomeOutlined,
   HomeFilledIcon as HomeFilled,
@@ -25,4 +27,5 @@ export {
   SaveLinedIcon as SaveLined,
   SettingsLinedIcon as SettingsLined,
   SwitchAccountLinedIcon as SwitchAccountLined,
+  MoreOptionsHorizontalIcon as MoreOptionsHorizontal,
 };
