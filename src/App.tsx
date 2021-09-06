@@ -1,4 +1,3 @@
-// import { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
@@ -8,10 +7,6 @@ import Messenger from "pages/messenger";
 import Explore from "pages/explore";
 
 const App = () => {
-  // const [posts, setPosts] = useState([]);
-
-  // const activeRoute = useRouteLocation();
-
   return (
     <div className="app">
       <Switch>
@@ -33,16 +28,3 @@ const App = () => {
 };
 
 export default App;
-
-// function useRouteLocation() {
-//   const location = useLocation();
-
-//   const [route, setRoute] = useState("/");
-
-//   useEffect(() => {
-//     const path = location.pathname;
-//     setRoute(path);
-//   }, [location]);
-
-//   return route;
-// }
