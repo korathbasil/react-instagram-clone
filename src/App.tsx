@@ -1,4 +1,6 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch } from "react-router-dom";
+
+import PrivateRoute from "utils/PrivateRoute";
 
 import "./App.css";
 import Login from "pages/login";
@@ -10,18 +12,10 @@ const App = () => {
   return (
     <div className="app">
       <Switch>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="/messenger">
-          <Messenger />
-        </Route>
-        <Route path="/explore">
-          <Explore />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        <PrivateRoute path="/login" component={Login} />
+        <PrivateRoute path="/messenger" component={Messenger} />
+        <PrivateRoute path="/explore" component={Explore} />
+        <PrivateRoute path="/" component={Home} />
       </Switch>
     </div>
   );
