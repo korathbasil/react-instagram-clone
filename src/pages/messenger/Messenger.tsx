@@ -1,7 +1,4 @@
-import { useSelector } from "react-redux";
 import { useAppSelector } from "state";
-
-import { RootState } from "state/store";
 
 import styles from "./messenger.module.scss";
 
