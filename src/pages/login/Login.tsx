@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import axios from "config/axios";
@@ -8,6 +9,18 @@ import Logo from "assets/images/instagram-logo-black.png";
 import FacebookLogoSmall from "assets/images/facebook-logo-small.png";
 
 const Login: React.FC = () => {
+  const [loginInputValues, setLoginInputValues] = useState({
+    email: "",
+    password: "",
+  });
+
+  const loginInputValueModifier = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setLoginInputValues({
+      ...loginInputValues,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const loginHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -33,6 +46,7 @@ const Login: React.FC = () => {
             data-testid="email-input"
             placeholder="Phone number, username or email address"
             required
+            onChange={loginInputValueModifier}
           />
 
           <input
@@ -40,6 +54,7 @@ const Login: React.FC = () => {
             data-testid="password-input"
             placeholder="Password"
             required
+            onChange={loginInputValueModifier}
           />
 
           <button type="submit">Log in</button>
