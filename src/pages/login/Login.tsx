@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-// import axios from "config/axios";
+
+import axios from "config/axios";
 
 import styles from "./login.module.scss";
 
@@ -10,15 +11,15 @@ const Login: React.FC = () => {
   const loginHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // axios
-    //   .post("/api/user/signup", {
-    //     email: "john@email.com",
-    //     name: "John Abraham",
-    //     username: "johnabraham",
-    //     password: "iamjohn",
-    //   })
-    //   .then((data) => console.log(data))
-    //   .catch((e) => console.log(e.response));
+    axios
+      .post("/api/user/signup", {
+        email: "john@email.com",
+        name: "John Abraham",
+        username: "johnabraham",
+        password: "iamjohn",
+      })
+      .then((data) => console.log(data))
+      .catch((e) => console.log(e.response));
   };
 
   return (
@@ -41,9 +42,7 @@ const Login: React.FC = () => {
             required
           />
 
-          <button type="submit" disabled>
-            Log in
-          </button>
+          <button type="submit">Log in</button>
 
           {/* Here goes the devider */}
 
