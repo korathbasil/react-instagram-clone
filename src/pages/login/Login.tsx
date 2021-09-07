@@ -39,7 +39,9 @@ const Login: React.FC = () => {
         email: loginInputValues.email,
         password: loginInputValues.password,
       })
-      .then((result) => console.log(result.data))
+      .then((result) => {
+        console.log(result.data);
+      })
       .catch((e) => console.log(e.response));
   };
 
