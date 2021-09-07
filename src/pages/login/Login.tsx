@@ -24,14 +24,22 @@ const Login: React.FC = () => {
   const loginHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // axios
+    //   .post("/api/user/signup", {
+    //     email: "ronaldo@email.com",
+    //     name: "Cristiano Ronaldo",
+    //     username: "cristiano",
+    //     password: "iamronaldo",
+    //   })
+    //   .then((data) => console.log(data))
+    //   .catch((e) => console.log(e.response));
+
     axios
-      .post("/api/user/signup", {
-        email: "john@email.com",
-        name: "John Abraham",
-        username: "johnabraham",
-        password: "iamjohn",
+      .post("/api/user/login", {
+        email: loginInputValues.email,
+        password: loginInputValues.password,
       })
-      .then((data) => console.log(data))
+      .then((result) => console.log(result.data))
       .catch((e) => console.log(e.response));
   };
 
@@ -43,6 +51,7 @@ const Login: React.FC = () => {
 
           <input
             type="email"
+            name="email"
             data-testid="email-input"
             placeholder="Phone number, username or email address"
             required
@@ -51,6 +60,7 @@ const Login: React.FC = () => {
 
           <input
             type="password"
+            name="password"
             data-testid="password-input"
             placeholder="Password"
             required
