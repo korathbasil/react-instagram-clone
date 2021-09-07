@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-// import axios from "config/axios";
+
+import axios from "config/axios";
 
 import styles from "./login.module.scss";
 
@@ -7,18 +9,40 @@ import Logo from "assets/images/instagram-logo-black.png";
 import FacebookLogoSmall from "assets/images/facebook-logo-small.png";
 
 const Login: React.FC = () => {
+  const [loginInputValues, setLoginInputValues] = useState({
+    email: "",
+    password: "",
+  });
+
+  const loginInputValueModifier = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setLoginInputValues({
+      ...loginInputValues,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const loginHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // axios
     //   .post("/api/user/signup", {
-    //     email: "john@email.com",
-    //     name: "John Abraham",
-    //     username: "johnabraham",
-    //     password: "iamjohn",
+    //     email: "ronaldo@email.com",
+    //     name: "Cristiano Ronaldo",
+    //     username: "cristiano",
+    //     password: "iamronaldo",
     //   })
     //   .then((data) => console.log(data))
     //   .catch((e) => console.log(e.response));
+
+    axios
+      .post("/api/user/login", {
+        email: loginInputValues.email,
+        password: loginInputValues.password,
+      })
+      .then((result) => {
+        console.log(result.data);
+      })
+      .catch((e) => console.log(e.response));
   };
 
   return (
@@ -29,21 +53,23 @@ const Login: React.FC = () => {
 
           <input
             type="email"
+            name="email"
             data-testid="email-input"
             placeholder="Phone number, username or email address"
             required
+            onChange={loginInputValueModifier}
           />
 
           <input
             type="password"
+            name="password"
             data-testid="password-input"
             placeholder="Password"
             required
+            onChange={loginInputValueModifier}
           />
 
-          <button type="submit" disabled>
-            Log in
-          </button>
+          <button type="submit">Log in</button>
 
           {/* Here goes the devider */}
 
