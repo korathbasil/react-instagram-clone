@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import axios from "config/axios";
+import { useAppDispatch, setUser } from "state";
 
 import styles from "./login.module.scss";
 
@@ -9,6 +10,8 @@ import Logo from "assets/images/instagram-logo-black.png";
 import FacebookLogoSmall from "assets/images/facebook-logo-small.png";
 
 const Login: React.FC = () => {
+  const history = useHistory();
+  const dispatch = useAppDispatch();
   const [loginInputValues, setLoginInputValues] = useState({
     email: "",
     password: "",
@@ -41,6 +44,8 @@ const Login: React.FC = () => {
       })
       .then((result) => {
         console.log(result.data);
+        dispatch(setUser(result.data.user.name));
+        history.push("/messenger");
       })
       .catch((e) => console.log(e.response));
   };
