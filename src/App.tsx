@@ -7,6 +7,7 @@ import Login from "pages/login";
 import Home from "pages/home";
 import Messenger from "pages/messenger";
 import Explore from "pages/explore";
+import CreatePost from "pages/createPost";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <PrivateRoute path="/login" component={Login} />
         <PrivateRoute path="/messenger" component={Messenger} />
         <PrivateRoute path="/explore" component={Explore} />
+        <PrivateRoute path="/create" component={CreatePost} />
         <PrivateRoute path="/" component={Home} />
       </Switch>
     </div>
