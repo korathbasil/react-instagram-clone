@@ -1,5 +1,56 @@
 .contents {
-  padding-top: 60px;
+  padding-top: 70px;
   max-width: 950px;
   margin: 0 auto;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  height: calc(100vh - 90px);
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    button {
+      font-size: 16px;
+      color: var(--blue);
+      font-weight: 600;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  .imageContainer {
+    width: 100%;
+    background-color: lightgreen;
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    flex: 1;
+
+    img {
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+  }
+
+  .optionSwitcher {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
