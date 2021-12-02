@@ -8,6 +8,8 @@ import {
   HomeOutlined,
   MessengerFilled,
   MessengerOutlined,
+  AddPostFilled,
+  AddPostOutlined,
   ExploreFilled,
   ExploreOutlined,
   HeartOutlined,
@@ -46,6 +48,16 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
                   <MessengerFilled />
                 ) : (
                   <MessengerOutlined />
+                )}
+              </Link>
+            </div>
+
+            <div className={styles.iconWrapper}>
+              <Link to="/create">
+                {activeRoute === "/create" ? (
+                  <AddPostFilled />
+                ) : (
+                  <AddPostOutlined />
                 )}
               </Link>
             </div>
