@@ -2,6 +2,8 @@ import HomeOutlinedIcon from "./HomeOutlinedIcon";
 import HomeFilledIcon from "./HomeFilledIcon";
 import MessengerOutlinedIcon from "./MessengerOutlinedIcon";
 import MessengerFilledIcon from "./MessengerFilledIcon";
+import AddPostOutlinedIcon from "./AddPostOutlinedIcon";
+import AddPostFilledIcon from "./AddPostFilledIcon";
 import ExploreOutlinedIcon from "./ExploreOutlinedIcon";
 import ExploreFilledIcon from "./ExploreFilledIcon";
 import HeartOutlinedIcon from "./HeartOutlinedIcon";
@@ -25,6 +27,8 @@ export {
   HomeFilledIcon as HomeFilled,
   MessengerOutlinedIcon as MessengerOutlined,
   MessengerFilledIcon as MessengerFilled,
+  AddPostOutlinedIcon as AddPostOutlined,
+  AddPostFilledIcon as AddPostFilled,
   ExploreOutlinedIcon as ExploreOutlined,
   ExploreFilledIcon as ExploreFilled,
   HeartOutlinedIcon as HeartOutlined,
