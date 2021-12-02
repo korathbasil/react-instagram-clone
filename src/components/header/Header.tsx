@@ -103,7 +103,7 @@ const Header: React.FC<{ activeRoute: string }> = ({ activeRoute }) => {
 export default Header;
 
 /* 
-        <div className={styles.search}>
+ <div className={styles.search}>
           <SearchIcon />
           <input />
         </div>
