@@ -1,8 +1,25 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import styles from "./signup.module.scss";
 
 import Logo from "assets/images/instagram-logo-black.png";
 
 const Signup = () => {
+  const [signupInputvalues, setSignupInputValues] = useState({
+    email: "",
+    name: "",
+    username: "",
+    password: "",
+  });
+
+  const signupInputValueModifier = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSignupInputValues({
+      ...signupInputvalues,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <div className={styles.parent}>
       <div className={styles.child}>
@@ -19,7 +36,7 @@ const Signup = () => {
             data-testid="email-input"
             placeholder="Mobile number or email address"
             required
-            onChange={loginInputValueModifier}
+            onChange={signupInputValueModifier}
           />
 
           <input
@@ -28,7 +45,7 @@ const Signup = () => {
             data-testid="name-input"
             placeholder="Full Name"
             required
-            onChange={loginInputValueModifier}
+            onChange={signupInputValueModifier}
           />
 
           <input
@@ -37,7 +54,7 @@ const Signup = () => {
             data-testid="username-input"
             placeholder="Uername"
             required
-            onChange={loginInputValueModifier}
+            onChange={signupInputValueModifier}
           />
 
           <input
@@ -46,10 +63,20 @@ const Signup = () => {
             data-testid="password-input"
             placeholder="Password"
             required
-            onChange={loginInputValueModifier}
+            onChange={signupInputValueModifier}
           />
-          <button type="submit">Log in</button>
+          <button type="submit">Sign Up</button>
+
+          <p>
+            By signing up, you agree to our <strong>Terms</strong>,
+            <strong>Data Policy</strong> and <strong>Cookie Policy.</strong>
+          </p>
         </form>
+        <div className={styles.bottom}>
+          <p>
+            Don't have an account? <Link to="/login">Login</Link>
+          </p>
+        </div>
       </div>
     </div>
   );
