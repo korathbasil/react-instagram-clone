@@ -1,0 +1,30 @@
+.parent {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  width: 350px;
+}
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 35px;
+  border: 1px solid var(--lightgrey);
+  align-items: center;
+
+  img {
+    width: 150px;
+    margin: 15px 0;
+  }
+
+  h6 {
+    color: grey;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
