@@ -22,6 +22,8 @@ import ShareOutlinedIcon from "./ShareOutlinedIcon";
 
 import SmileyOutlinedIcon from "./SmileyOutlinedIcon";
 
+import CloseButtonIcon from "./CloseButtonIcon";
+
 export {
   HomeOutlinedIcon as HomeOutlined,
   HomeFilledIcon as HomeFilled,
@@ -42,4 +44,5 @@ export {
   CommentOutlinedIcon as CommentOutlined,
   ShareOutlinedIcon as ShareOutlined,
   SmileyOutlinedIcon as SmileyOutlined,
+  CloseButtonIcon as CloseButton,
 };
