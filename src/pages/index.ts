@@ -1,8 +1,8 @@
 import Login from "./login/Login";
-import Signup from "./login/Login";
-import Home from "./login/Login";
-import Messenger from "./login/Login";
-import Explore from "./login/Login";
-import Profile from "./login/Login";
+import Signup from "./signup/Signup";
+import Home from "./home/Home";
+import Messenger from "./messenger/Messenger";
+import Explore from "./explore/Explore";
+import Profile from "./profile/Profile";
 
 export { Login, Signup, Home, Messenger, Explore, Profile };
