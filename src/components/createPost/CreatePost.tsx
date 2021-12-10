@@ -2,7 +2,11 @@ import styles from "./createPost.module.scss";
 
 import { CloseButton } from "assets/icons";
 
-const CreatePost = () => {
+interface ICreatePostProps {
+  modalHandler: () => void;
+}
+
+const CreatePost: React.FC<ICreatePostProps> = ({ modalHandler }) => {
   const DisableBackgroundScrolling = () => {
     document.body.style.overflow = "hidden";
   };
@@ -14,7 +18,7 @@ const CreatePost = () => {
         <h2>CraetePost</h2>
       </div>
 
-      <div className={styles.exit}>
+      <div className={styles.exit} onClick={modalHandler}>
         <CloseButton />
       </div>
     </div>

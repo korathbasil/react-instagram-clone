@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Switch } from "react-router-dom";
 
 import PrivateRoute from "utils/PrivateRoute";
@@ -13,6 +14,11 @@ import Explore from "pages/explore";
 import CreatePost from "components/createPost";
 
 const App = () => {
+  const [isCreatePostModalOpen, setIsCreatePostModalOpen] = useState(true);
+  const createPostModalHandler = () => {
+    setIsCreatePostModalOpen(!isCreatePostModalOpen);
+  };
+
   return (
     <div className="app">
       <Switch>
@@ -23,7 +29,9 @@ const App = () => {
         {/* <PrivateRoute path="/create" component={CreatePost} /> */}
         <PrivateRoute path="/" component={Home} />
       </Switch>
-      <CreatePost />
+      {isCreatePostModalOpen && (
+        <CreatePost modalHandler={createPostModalHandler} />
+      )}
     </div>
   );
 };
