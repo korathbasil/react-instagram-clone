@@ -8,7 +8,9 @@ import Signup from "pages/signup";
 import Home from "pages/home";
 import Messenger from "pages/messenger";
 import Explore from "pages/explore";
-import CreatePost from "pages/createPost";
+// import CreatePost from "pages/createPost";
+
+import CreatePost from "components/createPost";
 
 const App = () => {
   return (
@@ -18,9 +20,10 @@ const App = () => {
         <PrivateRoute path="/signup" component={Signup} />
         <PrivateRoute path="/messenger" component={Messenger} />
         <PrivateRoute path="/explore" component={Explore} />
-        <PrivateRoute path="/create" component={CreatePost} />
+        {/* <PrivateRoute path="/create" component={CreatePost} /> */}
         <PrivateRoute path="/" component={Home} />
       </Switch>
+      <CreatePost />
     </div>
   );
 };
