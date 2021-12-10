@@ -5,7 +5,7 @@ const PostContainer: React.FC = () => {
     <Post
       avatar="https://upload.wikimedia.org/wikipedia/commons/d/df/Sabrina_Carpenter_2019.jpg"
       userName="Sabrina Carpenter"
-      postImage="https://upload.wikimedia.org/wikipedia/commons/d/df/Sabrina_Carpenter_2019.jpg"
+      postImage="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
       caption="Hello World 🔥🔥👏"
     />
   );
