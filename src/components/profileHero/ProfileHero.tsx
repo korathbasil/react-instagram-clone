@@ -9,7 +9,14 @@ const ProfileHero = () => {
           alt=""
         />
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        <div className={styles.top}>
+          <div className={styles.username}>
+            <h2>cristiano</h2>
+          </div>
+          <div className={styles.actions}></div>
+        </div>
+      </div>
     </div>
   );
 };

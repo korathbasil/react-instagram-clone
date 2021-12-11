@@ -1,6 +1,5 @@
 .hero {
   width: 100%;
-  padding: 10px 0;
   display: flex;
 
   .left {
@@ -17,6 +16,7 @@
   }
 
   .right {
+    padding: 10px 0;
     flex: 1;
   }
 }
