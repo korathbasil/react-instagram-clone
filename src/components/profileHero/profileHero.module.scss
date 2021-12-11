@@ -1,0 +1,22 @@
+.hero {
+  width: 100%;
+  display: flex;
+
+  .left {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 999px;
+      object-fit: cover;
+    }
+  }
+
+  .right {
+    padding: 10px 0;
+    flex: 1;
+  }
+}
