@@ -1,21 +1,18 @@
 import { useState } from "react";
 import { Switch } from "react-router-dom";
 
-import PrivateRoute from "utils/PrivateRoute";
-
-import "./App.css";
 import { Login, Signup, Home, Messenger, Explore, Profile } from "pages";
 
+import PrivateRoute from "utils/PrivateRoute";
 import CreatePost from "components/createPost";
 
-const App = () => {
+const PrivateApp = () => {
   const [isCreatePostModalOpen, setIsCreatePostModalOpen] = useState(false);
   const createPostModalHandler = () => {
     setIsCreatePostModalOpen(!isCreatePostModalOpen);
   };
-
   return (
-    <div className="app">
+    <>
       <Switch>
         <PrivateRoute path="/login" component={Login} />
         <PrivateRoute path="/signup" component={Signup} />
@@ -28,8 +25,8 @@ const App = () => {
       {isCreatePostModalOpen && (
         <CreatePost modalHandler={createPostModalHandler} />
       )}
-    </div>
+    </>
   );
 };
 
-export default App;
+export default PrivateApp;
