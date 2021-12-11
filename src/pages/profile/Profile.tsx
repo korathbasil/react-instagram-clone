@@ -1,14 +1,13 @@
-import { Header } from "components";
+import styles from "./profile.module.scss";
+import { Header, ProfileHero } from "components";
 
 const Profile = () => {
   return (
-    <div>
+    <div className={styles.parent}>
       <Header activeRoute="" />
-      Profile Page
-      <h2>PSdsd</h2>
-      <h2>PSdsd</h2>
-      <h2>PSdsd</h2>
-      <h2>PSdsd</h2>
+      <div className={styles.main}>
+        <ProfileHero />
+      </div>
     </div>
   );
 };
