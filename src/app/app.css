@@ -32,9 +32,10 @@ code {
 .app {
   height: 100vh;
   background-color: #fafafa;
+  /* overflow: scroll; */
 }
 
-.app__mainBody {
+/* .app__mainBody {
   width: 100%;
 }
 .app__mainBodyContainer {
@@ -47,4 +48,4 @@ code {
 }
 .app__mainBodyWidgets {
   width: 30%;
-}
+} */
