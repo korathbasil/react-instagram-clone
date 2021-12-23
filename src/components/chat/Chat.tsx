@@ -1,5 +1,10 @@
 import styles from "./chat.module.scss";
-import { InfoOutlined, EmojiOutlined } from "assets/icons";
+import {
+  InfoOutlined,
+  EmojiOutlined,
+  ImageOutlined,
+  HeartOutlined,
+} from "assets/icons";
 
 export const Chat = () => {
   return (
@@ -20,6 +25,8 @@ export const Chat = () => {
         <form>
           <input type="text" />
         </form>
+        <ImageOutlined />
+        <HeartOutlined />
       </div>
     </div>
   );

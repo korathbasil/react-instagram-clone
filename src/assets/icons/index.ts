@@ -28,6 +28,7 @@ import { DownArrow } from "./DownArrowIcon";
 import { InfoOutlinedIcon } from "./InfoOutlinedIcon";
 import { EmojiOutlinedIcon } from "./EmojiOutlinedIcon";
 import { ImageOutlinedIcon } from "./ImageOutlinedIcon";
+import { HeartOutlinedThickIcon } from "./HeartOutlinedThickIcon";
 
 export {
   HomeOutlinedIcon as HomeOutlined,
@@ -55,4 +56,5 @@ export {
   InfoOutlinedIcon as InfoOutlined,
   EmojiOutlinedIcon as EmojiOutlined,
   ImageOutlinedIcon as ImageOutlined,
+  HeartOutlinedThickIcon as HeartOutlinedThick,
 };
