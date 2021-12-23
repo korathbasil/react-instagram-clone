@@ -3,7 +3,7 @@ import {
   InfoOutlined,
   EmojiOutlined,
   ImageOutlined,
-  HeartOutlined,
+  HeartOutlinedThick,
 } from "assets/icons";
 
 export const Chat = () => {
@@ -23,10 +23,12 @@ export const Chat = () => {
       <div className={styles.input}>
         <EmojiOutlined />
         <form>
-          <input type="text" />
+          <input type="text" placeholder="Message...." />
         </form>
         <ImageOutlined />
-        <HeartOutlined />
+        <div>
+          <HeartOutlinedThick />
+        </div>
       </div>
     </div>
   );
