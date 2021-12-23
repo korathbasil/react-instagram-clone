@@ -1,8 +1,8 @@
 import { useAppSelector } from "state";
 import styles from "./messenger.module.scss";
 
-import { DownArrow, CreateMessage } from "assets/icons";
 import Header from "components/header";
+import { ChatUsers } from "components";
 
 const Messenger = () => {
   const name = useAppSelector((state) => state.user.name);
@@ -12,14 +12,9 @@ const Messenger = () => {
       <div className={styles.main}>
         <div className={styles.chat}>
           <div className={styles.left}>
-            <div className={styles.header}>
-              <div>
-                <h4>Korathbasil</h4>
-                <DownArrow />
-              </div>
-              <CreateMessage />
-            </div>
+            <ChatUsers />
           </div>
+
           <div className={styles.right}>
             <div className={styles.header}>header</div>
           </div>
@@ -27,6 +22,10 @@ const Messenger = () => {
       </div>
     </div>
   );
+};
+
+const UserSelector = () => {
+  return <div>People</div>;
 };
 
 export default Messenger;
