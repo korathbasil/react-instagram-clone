@@ -8,12 +8,16 @@ const Messenger = () => {
   return (
     <div className={styles.parent}>
       <Header activeRoute={"/messenger"} />
-      <h1>Messenger Page</h1>
-      <h1>Messenger Page</h1>
-      <h1>Messenger Page</h1>
-      <h1>Messenger Page</h1>
-      <h1>Messenger Page</h1>
-      <h1>{name}</h1>
+      <div className={styles.main}>
+        <div className={styles.chat}>
+          <div className={styles.left}>
+            <div className={styles.header}></div>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.header}>header</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
