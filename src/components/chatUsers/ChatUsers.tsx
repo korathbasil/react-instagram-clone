@@ -3,7 +3,7 @@ import { DownArrow, CreateMessage } from "assets/icons";
 
 export const ChatUsers = () => {
   return (
-    <section>
+    <div className={styles.parent}>
       <div className={styles.header}>
         <CreateMessage />
         <div>
@@ -34,7 +34,7 @@ export const ChatUsers = () => {
         <UserSelector />
         <UserSelector />
       </div>
-    </section>
+    </div>
   );
 };
 
