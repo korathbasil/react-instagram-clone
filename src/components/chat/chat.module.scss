@@ -29,4 +29,11 @@
     background-color: khaki;
     flex: 1;
   }
+
+  .input {
+    margin: 15px;
+    border: var(--border);
+    border-radius: 20px;
+    padding: 10px 15px;
+  }
 }

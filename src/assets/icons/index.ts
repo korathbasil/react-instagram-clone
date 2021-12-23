@@ -26,6 +26,8 @@ import CloseButtonIcon from "./CloseButtonIcon";
 import { CreateMessageOutlinedIcon } from "./CreateMessageOutlinedIcon";
 import { DownArrow } from "./DownArrowIcon";
 import { InfoOutlinedIcon } from "./InfoOutlinedIcon";
+import { EmojiOutlinedIcon } from "./EmojiOutlinedIcon";
+import { ImageOutlinedIcon } from "./ImageOutlinedIcon";
 
 export {
   HomeOutlinedIcon as HomeOutlined,
@@ -51,4 +53,6 @@ export {
   CreateMessageOutlinedIcon as CreateMessage,
   DownArrow,
   InfoOutlinedIcon as InfoOutlined,
+  EmojiOutlinedIcon as EmojiOutlined,
+  ImageOutlinedIcon as ImageOutlined,
 };

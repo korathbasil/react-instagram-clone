@@ -1,5 +1,5 @@
 import styles from "./chat.module.scss";
-import { InfoOutlined } from "assets/icons";
+import { InfoOutlined, EmojiOutlined } from "assets/icons";
 
 export const Chat = () => {
   return (
@@ -15,7 +15,12 @@ export const Chat = () => {
         <InfoOutlined />
       </div>
       <div className={styles.chat}></div>
-      <div className={styles.input}>hello</div>
+      <div className={styles.input}>
+        <EmojiOutlined />
+        <form>
+          <input type="text" />
+        </form>
+      </div>
     </div>
   );
 };
