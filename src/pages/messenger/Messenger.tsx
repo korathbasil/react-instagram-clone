@@ -1,8 +1,7 @@
 import { useAppSelector } from "state";
 import styles from "./messenger.module.scss";
 
-import Header from "components/header";
-import { ChatUsers } from "components";
+import { Header, ChatUsers, Chat } from "components";
 
 const Messenger = () => {
   const name = useAppSelector((state) => state.user.name);
@@ -16,7 +15,7 @@ const Messenger = () => {
           </div>
 
           <div className={styles.right}>
-            <div className={styles.header}>header</div>
+            <Chat />
           </div>
         </div>
       </div>
