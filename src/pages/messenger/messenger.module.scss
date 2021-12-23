@@ -1,0 +1,28 @@
+.main {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-top: 75px;
+  display: flex;
+}
+.chat {
+  height: calc(100vh - 95px);
+  max-height: calc(100vh - 95px);
+  width: 100%;
+  max-height: 100%;
+  border: var(--border);
+  border-radius: 2px;
+  display: flex;
+  margin-bottom: 20px;
+  //   transform: rotateX(180);
+
+  .left {
+    width: 40%;
+    height: 100%;
+    min-width: 300px;
+    border-right: var(--border);
+  }
+
+  .right {
+    flex: 1;
+  }
+}

@@ -23,6 +23,12 @@ import ShareOutlinedIcon from "./ShareOutlinedIcon";
 import SmileyOutlinedIcon from "./SmileyOutlinedIcon";
 
 import CloseButtonIcon from "./CloseButtonIcon";
+import { CreateMessageOutlinedIcon } from "./CreateMessageOutlinedIcon";
+import { DownArrow } from "./DownArrowIcon";
+import { InfoOutlinedIcon } from "./InfoOutlinedIcon";
+import { EmojiOutlinedIcon } from "./EmojiOutlinedIcon";
+import { ImageOutlinedIcon } from "./ImageOutlinedIcon";
+import { HeartOutlinedThickIcon } from "./HeartOutlinedThickIcon";
 
 export {
   HomeOutlinedIcon as HomeOutlined,
@@ -45,4 +51,10 @@ export {
   ShareOutlinedIcon as ShareOutlined,
   SmileyOutlinedIcon as SmileyOutlined,
   CloseButtonIcon as CloseButton,
+  CreateMessageOutlinedIcon as CreateMessage,
+  DownArrow,
+  InfoOutlinedIcon as InfoOutlined,
+  EmojiOutlinedIcon as EmojiOutlined,
+  ImageOutlinedIcon as ImageOutlined,
+  HeartOutlinedThickIcon as HeartOutlinedThick,
 };
