@@ -1,7 +1,7 @@
 .main {
   max-width: 950px;
   margin: 0 auto;
-  margin-top: 75px;
+  padding-top: 75px;
   display: flex;
 }
 .chat {
@@ -12,6 +12,7 @@
   border-radius: 2px;
   display: flex;
   margin-bottom: 20px;
+  //   transform: rotateX(180);
 
   .left {
     width: 40%;
