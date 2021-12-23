@@ -8,9 +8,10 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  padding: 15px;
   position: relative;
   border-bottom: var(--border);
+  height: 60px;
+  padding: 0 15px;
 
   div {
     position: absolute;
